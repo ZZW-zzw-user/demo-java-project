@@ -9,15 +9,11 @@ pipeline {
                 echo "代码已从GitHub拉取完成"
             }
         }
-        stage('Maven打包') {
+        stage('Maven打包111111111') {
             steps {
                 sh 'mvn clean package -DskipTests'
             }
         }
-        stage('构建Docker镜像zzw11的哦') {
-            steps {
-                sh 'docker build -t demo-java:${BUILD_NUMBER} .'
-            }
-        }
+        
     }
 }
