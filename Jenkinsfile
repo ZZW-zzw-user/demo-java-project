@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'maven3.9' // 和全局配置的Maven名称保持一致
+    }
     stages {
         stage('代码拉取') {
             steps {
